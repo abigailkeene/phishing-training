@@ -50,123 +50,108 @@
       margin-top: 0.5rem;
       padding: 0.4rem 0.8rem;
       font-size: 0.9rem;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <h1>Phishing Awareness Training Module</h1>
+<h1>Phishing Awareness Training Module</h1>
 
-  <!-- Section 1: What is Phishing? -->
-  <div class="section">
-    <h2>What is Phishing?</h2>
-    <p>Phishing is a cyberattack where attackers pose as trusted individuals or organizations to trick users into revealing sensitive information like passwords, credit card numbers, or personal details. These attacks are often delivered through email, text, or fake websites that look legitimate. Phishing can lead to identity theft, data breaches, and financial loss.</p>
+<!-- Question Container -->
+<div class="section">
+  <h2>What is Phishing?</h2>
+  <p>Phishing is a cyberattack where attackers pose as trusted individuals or organizations to trick users into revealing sensitive information like passwords, credit card numbers, or personal details. These attacks are often delivered through email, text, or fake websites that look legitimate. Phishing can lead to identity theft, data breaches, and financial loss.</p>
+  <div class="question" data-question="1" data-prompt="What is the main goal of a phishing attack?" data-correct="To steal sensitive information" data-options='["To send spam emails", "To steal sensitive information"]'></div>
+  <div class="question" data-question="2" data-prompt="Which of the following best describes phishing?" data-correct="A deceptive technique to gather personal data" data-options='["A deceptive technique to gather personal data", "Installing antivirus software"]'></div>
+</div>
 
-    <div class="question">
-      <p><strong>1. What is the main goal of a phishing attack?</strong></p>
-      <button onclick="checkAnswer(this, 'To send spam emails', 'To steal sensitive information')">To send spam emails</button>
-      <button onclick="checkAnswer(this, 'To steal sensitive information', 'To steal sensitive information')">To steal sensitive information</button>
-      <div class="feedback"></div>
-    </div>
+<div class="section">
+  <h2>Email Phishing</h2>
+  <p>Email phishing is the most common form of phishing, where attackers send emails that appear to be from legitimate sources such as banks, coworkers, or service providers. These messages often contain urgent language, suspicious links, or attachments that prompt users to take immediate action. Falling for these emails can give attackers access to your accounts or personal data.</p>
+  <div class="question" data-question="3" data-prompt="What is a common sign of a phishing email?" data-correct="Urgent language and suspicious links" data-options='["Urgent language and suspicious links", "Correct spelling and grammar"]'></div>
+</div>
 
-    <div class="question">
-      <p><strong>2. Which of the following best describes phishing?</strong></p>
-      <button onclick="checkAnswer(this, 'A deceptive technique to gather personal data', 'A deceptive technique to gather personal data')">A deceptive technique to gather personal data</button>
-      <button onclick="checkAnswer(this, 'Installing antivirus software', 'A deceptive technique to gather personal data')">Installing antivirus software</button>
-      <div class="feedback"></div>
-    </div>
-  </div>
+<div class="section">
+  <h2>Spear Phishing</h2>
+  <p>Spear phishing is a more targeted form of phishing that uses personal details to make the message seem legitimate. Attackers may know your name, job title, or recent activity, making it harder to detect. These emails are often more convincing and designed to steal credentials or install malware.</p>
+  <div class="question" data-question="4" data-prompt="How is spear phishing different from regular phishing?" data-correct="It targets specific individuals using personal information" data-options='["It is sent to thousands of random people", "It targets specific individuals using personal information"]'></div>
+</div>
 
-  <!-- Section 2: Types of Phishing -->
-  <div class="section">
-    <h2>Email Phishing</h2>
-    <p>Email phishing is the most common form of phishing, where attackers send emails that appear to be from legitimate sources such as banks, coworkers, or service providers. These messages often contain urgent language, suspicious links, or attachments that prompt users to take immediate action. Falling for these emails can give attackers access to your accounts or personal data.</p>
+<div class="section">
+  <h2>Smishing & Vishing</h2>
+  <p>Smishing uses SMS (text messages) to trick recipients into clicking malicious links or revealing information. Vishing, on the other hand, happens over voice calls where attackers pretend to be tech support, banks, or government officials. These methods rely on urgency and fear to manipulate victims quickly.</p>
+  <div class="question" data-question="5" data-prompt="Smishing attacks usually occur via:" data-correct="Text messages" data-options='["Phone calls", "Text messages"]'></div>
+  <div class="question" data-question="6" data-prompt="Vishing is different from smishing because:" data-correct="It uses voice calls instead of texts" data-options='["It uses voice calls instead of texts", "It is sent by email"]'></div>
+</div>
 
-    <div class="question">
-      <p><strong>3. What is a common sign of a phishing email?</strong></p>
-      <button onclick="checkAnswer(this, 'Urgent language and suspicious links', 'Urgent language and suspicious links')">Urgent language and suspicious links</button>
-      <button onclick="checkAnswer(this, 'Correct spelling and grammar', 'Urgent language and suspicious links')">Correct spelling and grammar</button>
-      <div class="feedback"></div>
-    </div>
-  </div>
+<div class="section">
+  <h2>Advanced Threats: AI & Deepfake Phishing</h2>
+  <p>AI-generated phishing uses machine learning to craft more realistic and personalized messages. Deepfake phishing takes this a step further by using fake audio or video to impersonate real people, like a CEO or coworker. These advanced tactics can be highly convincing and difficult to detect without proper awareness.</p>
+  <div class="question" data-question="7" data-prompt="What makes deepfake phishing especially dangerous?" data-correct="It can mimic real people’s voices and faces" data-options='["It uses strong passwords", "It can mimic real people’s voices and faces"]'></div>
+</div>
 
-  <div class="section">
-    <h2>Spear Phishing</h2>
-    <p>Spear phishing is a more targeted form of phishing that uses personal details to make the message seem legitimate. Attackers may know your name, job title, or recent activity, making it harder to detect. These emails are often more convincing and designed to steal credentials or install malware.</p>
+<div class="section">
+  <h2>How to Report Phishing Attacks at Five Guys</h2>
+  <p>If you believe you've received a phishing email while working at Five Guys, it's important to take action quickly. While the exact internal reporting contact may vary, you should always follow standard corporate security practices to help protect yourself and your team.</p>
+  <p>Here are the recommended steps to report a phishing email:</p>
+  <ul>
+    <li><strong>Step 1:</strong> Check your Outlook or email system for a “Report Phishing” button or plugin. Many corporate systems—including Five Guys—use these tools to simplify reporting.</li>
+    <li><strong>Step 2:</strong> Review your employee handbook or IT security policies. These often include company-specific instructions for reporting suspicious activity.</li>
+    <li><strong>Step 3:</strong> If no internal method is available, use one of these general reporting options:
+      <ul>
+        <li>Forward the phishing email to <a href="mailto:reportphishing@apwg.org">reportphishing@apwg.org</a>.</li>
+        <li>Report the message to your email provider (e.g., Gmail, Outlook).</li>
+        <li>Submit the phishing attempt to the FTC at <a href="https://ReportFraud.ftc.gov" target="_blank">ReportFraud.ftc.gov</a>.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>⚠️ <strong>Important:</strong> Do not click on any links or download any attachments in the suspicious email. Report it first, then delete the message once you've submitted it to the proper channel.</p>
+</div>
 
-    <div class="question">
-      <p><strong>4. How is spear phishing different from regular phishing?</strong></p>
-      <button onclick="checkAnswer(this, 'It is sent to thousands of random people', 'It targets specific individuals using personal information')">It is sent to thousands of random people</button>
-      <button onclick="checkAnswer(this, 'It targets specific individuals using personal information', 'It targets specific individuals using personal information')">It targets specific individuals using personal information</button>
-      <div class="feedback"></div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Smishing & Vishing</h2>
-    <p>Smishing uses SMS (text messages) to trick recipients into clicking malicious links or revealing information. Vishing, on the other hand, happens over voice calls where attackers pretend to be tech support, banks, or government officials. These methods rely on urgency and fear to manipulate victims quickly.</p>
-
-    <div class="question">
-      <p><strong>5. Smishing attacks usually occur via:</strong></p>
-      <button onclick="checkAnswer(this, 'Phone calls', 'Text messages')">Phone calls</button>
-      <button onclick="checkAnswer(this, 'Text messages', 'Text messages')">Text messages</button>
-      <div class="feedback"></div>
-    </div>
-
-    <div class="question">
-      <p><strong>6. Vishing is different from smishing because:</strong></p>
-      <button onclick="checkAnswer(this, 'It uses voice calls instead of texts', 'It uses voice calls instead of texts')">It uses voice calls instead of texts</button>
-      <button onclick="checkAnswer(this, 'It is sent by email', 'It uses voice calls instead of texts')">It is sent by email</button>
-      <div class="feedback"></div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Advanced Threats: AI & Deepfake Phishing</h2>
-    <p>AI-generated phishing uses machine learning to craft more realistic and personalized messages. Deepfake phishing takes this a step further by using fake audio or video to impersonate real people, like a CEO or coworker. These advanced tactics can be highly convincing and difficult to detect without proper awareness.</p>
-
-    <div class="question">
-      <p><strong>7. What makes deepfake phishing especially dangerous?</strong></p>
-      <button onclick="checkAnswer(this, 'It uses strong passwords', 'It can mimic real people’s voices and faces')">It uses strong passwords</button>
-      <button onclick="checkAnswer(this, 'It can mimic real people’s voices and faces', 'It can mimic real people’s voices and faces')">It can mimic real people’s voices and faces</button>
-      <div class="feedback"></div>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>How to Report Phishing Attacks at Five Guys</h2>
-    <p>If you believe you've received a phishing email while working at Five Guys, it's important to take action quickly. While the exact internal reporting contact may vary, you should always follow standard corporate security practices to help protect yourself and your team.</p>
-  
-    <p>Here are the recommended steps to report a phishing email:</p>
-    <ul>
-      <li><strong>Step 1:</strong> Check your Outlook or email system for a “Report Phishing” button or plugin. Many corporate systems—including Five Guys—use these tools to simplify reporting.</li>
-      <li><strong>Step 2:</strong> Review your employee handbook or IT security policies. These often include company-specific instructions for reporting suspicious activity.</li>
-      <li><strong>Step 3:</strong> If no internal method is available, use one of these general reporting options:
-        <ul>
-          <li>Forward the phishing email to <a href="mailto:reportphishing@apwg.org">reportphishing@apwg.org</a>.</li>
-          <li>Report the message to your email provider (e.g., Gmail, Outlook).</li>
-          <li>Submit the phishing attempt to the FTC at <a href="https://ReportFraud.ftc.gov" target="_blank">ReportFraud.ftc.gov</a>.</li>
-        </ul>
-      </li>
-    </ul>
-  
-    <p>⚠️ <strong>Important:</strong> Do not click on any links or download any attachments in the suspicious email. Report it first, then delete the message once you've submitted it to the proper channel.</p>
-  </div>
-  
-
-  <script>
-    function checkAnswer(button, selected, correct) {
-      const feedbackEl = button.parentElement.querySelector(".feedback");
-
-      if (selected === correct) {
-        feedbackEl.innerHTML = "✅ Correct!";
-        feedbackEl.className = "feedback correct";
-        button.parentElement.querySelectorAll("button").forEach(btn => btn.disabled = true);
-      } else {
-        feedbackEl.innerHTML = "❌ Incorrect. Try again.";
-        feedbackEl.className = "feedback incorrect";
-      }
+<script>
+  function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
     }
-  </script>
+    return array;
+  }
+
+  function checkAnswer(button, selected, correct) {
+    const feedbackEl = button.parentElement.querySelector(".feedback");
+    if (selected === correct) {
+      feedbackEl.innerHTML = "✅ Correct!";
+      feedbackEl.className = "feedback correct";
+      button.parentElement.querySelectorAll("button").forEach(btn => btn.disabled = true);
+    } else {
+      feedbackEl.innerHTML = "❌ Incorrect. Try again.";
+      feedbackEl.className = "feedback incorrect";
+    }
+  }
+
+  function renderQuestions() {
+    document.querySelectorAll('.question').forEach(q => {
+      const prompt = q.dataset.prompt;
+      const correct = q.dataset.correct;
+      const options = JSON.parse(q.dataset.options);
+      q.innerHTML = `<p><strong>${q.dataset.question}. ${prompt}</strong></p>`;
+
+      shuffle(options).forEach(opt => {
+        const btn = document.createElement('button');
+        btn.textContent = opt;
+        btn.onclick = () => checkAnswer(btn, opt, correct);
+        q.appendChild(btn);
+      });
+
+      const feedback = document.createElement('div');
+      feedback.className = "feedback";
+      q.appendChild(feedback);
+    });
+  }
+
+  renderQuestions();
+</script>
+
 </body>
 </html>
